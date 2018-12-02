@@ -1,9 +1,19 @@
 # VAE_ABIDE1
-The model stored here corresponds to the study "Identification of Autism Spectrum Disorders on Brain Structural MRI with Variational Autoencoders":
-(site IHC: poster + )
+This work has been made and shared by the team Institut Hypercube (https://www.institut-hypercube.org/en/, https://www.facebook.com/InstitutHyperCube/).
+
+The model stored here corresponds to the study "Identification of Autism Spectrum Disorders on Brain Structural MRI with Variational Autoencoders" presented at Women in Machine Learning 2018 workshop:
+(TBA)
 
 The architecture of the model in this git repo is: 
+- Encoder:
+  - 3 (convolutional + max pooling) blocks
+  - 2 fully connected layers [2048, 1024]
+- bottleneck: 512
+- Decoder:
+  - 2 fully connected layers [1024, 2048]
+  - 3 (deconvolutional + upsampling means) blocks
 
+The activation function used is 'selu': https://www.tensorflow.org/api_docs/python/tf/nn/selu, https://arxiv.org/abs/1706.02515
 
 To use the model: 
 
