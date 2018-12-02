@@ -154,7 +154,6 @@ if __name__=='__main__':
         mi = mutual_info_classif(X_model, Y_model)
         X_model_mi = X_model[:, list(map(lambda x: x > 0, list(mi)))]
         X_val_mi = X_val[:, list(map(lambda x: x > 0, list(mi)))]
-        print(X_model_mi)
 
         print("sel1:")
         sel1 = selectRFECV_RegLog(X_model_mi, Y_model, step=1, max_iter=1000, print_plot=False)
@@ -235,4 +234,5 @@ if __name__=='__main__':
             L_best.append(sel_common_vae_5)
 
         # save df_score
+        df_score.index = ["ROC_AUC", "p_val", "number_of_selected_features"]
         df_score.to_csv(dirname + "/df_score_" + n + ".csv")
