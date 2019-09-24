@@ -2,6 +2,7 @@
 This work has been made and shared by the team Institut Hypercube (https://www.institut-hypercube.org/en/, https://www.facebook.com/InstitutHyperCube/).
 
 The model stored here corresponds to the study "Identification of Autism Spectrum Disorders on Brain Structural MRI with Variational Autoencoders" presented at Women in Machine Learning 2018 workshop (files poster4.pdf and Identification_of_Autism_Spectrum_Disorders_on_Brain_Structural_MRI_with_Variational_Autoencoders.pdf)
+![alt text](https://raw.githubusercontent.com/blackPacha/VAE_ABIDE1/blob/master/poster43.jpeg)
 
 The architecture of the model in this git repo is: 
 - Encoder:
